@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Particle Variable with GET Request</title>
+</head>
+<body id="Body">
+    <button id="Get">Get some data</button>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/p5@1.1.9/lib/p5.js"></script> -->
+
+    <script>
+        $(document).ready(function(){
+            let colrH = 200;
+            let colrS = 100;
+
+            $("#Get").click(function(){
+                $.getJSON("https://api.particle.io/v1/devices/DEVICEIDHERE/pot_1_Value?access_token=ACCESSTOKENHERE", function(data){
+                    console.log(data.result);
+                    let var1 = parseInt(data.result);
+                    let colrH = map_range(var1, 0, 4095, 0, 360);
+                    console.log("Color H:" + colrH);
+                    document.getElementById("Body").style.backgroundColor ="hsl("+colrH+","+colrS+"%,50%)";
+
+                    
+                })
+                $.getJSON("https://api.particle.io/v1/devices/DEVICEIDHERE/pot_2_Value?access_token=ACCESSTOKENHERE", function(data){
+                    console.log(data.result);
+                    let var2 = parseInt(data.result);
+                    let colrS = map_range(var2, 0, 4095, 0, 100);
+                    console.log("Color S:" + colrS);
+                    document.getElementById("Body").style.backgroundColor ="hsl("+colrH+","+colrS+"%,50%)";
+
+                })
+                $.getJSON("https://api.particle.io/v1/devices/DEVICEIDHERE/btn_1_Value?access_token=ACCESSTOKENHERE", function(data){
+                    console.log(data.result);
+                })
+
+                
+            })
+
+            function map_range(value, low1, high1, low2, high2) {
+            return low2 + (high2 - low2) * (value - low1) / (high1 - low1);
+        }
+
+        })
+    </script>
+</body>
+</html>
