@@ -25,7 +25,26 @@
             <p>My collection of posts for Fall 2020 at ArtCenter College of Design in Pasadena, California            </p>
         </div>
 
-        <div class="entree">
+        <div class="entry">
+            <h4>Project 2: Interactive Natural System</h4>
+            <br>
+            <p>The second project introduces a Particle Argon board taking inputs from potentiometers and a tactile button and sending strings of data to be used in the Natural System. To keep things easier to manage, I opted to forgo the whole tadpole eats lettuce and focused on the frog eating the flies.</p>
+            <p>One major addition to this is the rewriting of code to incorporate forces that repel the flies from the frog. Initially I began by writing in PVectors in place of variables like posX and posY. A few iterations in I found it best to just start from scratch and write the code around these parameters and then bring the frog and fly images in.</p>
+            <p>The controller is built into a Sparkfun box with the tactile button placed just above the right potentiometer knob. The left knob controls the X axis movement and the right knob controls Y axis movement, much like an Etch-a-Sketch. However, these controls are mapped to full negative or full positive velocity, so unlike an Etch-a-Sketch "cursor", the frog continues in the directions according to the knob positions. The tactile button serves to eat the flies, but only if they are within the set "striking range"</p>
+            <br>
+            <p>The controller:</p>
+            <img src="images/ParticleController1.jpg" class="center" style="width:80%">
+            <br>
+            <img src="images/ParticleController2.jpg" class="center" style="width:80%">
+            <br>
+            <img src="images/ParticleController3.jpg" class="center" style="width:80%">
+            <br>
+            <p>For your viewing consideration, a quick demo video:
+            <iframe src="https://player.vimeo.com/video/470463256" class="center" width="640" height="480" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></p>
+            <p>For future consideration, I would probably add a left tactile button, just for left handed or even ambidextrous engagement.</p>
+        </div>
+
+        <div class="entry">
             <h4>Reading Response: <i>What do Prototypes Prototype?</i> Houde, Stephanie and Charles Hill</h4>
             <br>
             <p><i>"Everyone has a different expectation of what a prototype is. Industrial designers call a molded foam model a prototype. Interaction designers refer to a simulation of on-screen appearance and behavior as a prototype. Programmers call a test program a prototype. A user studies expert may call a storyboard, which shows a scenario of something being used, a prototype."</i></p>
@@ -39,7 +58,7 @@
             <p>I find myself on the fence regarding the idea of these types of models, and I would definitely err on the side of caution when considering this implementation. I'm certain that these are only created after other extensive prototyping sessions have been exhausted, reaching this state. However, in my experience, I have seen many a prototype come to this level prematurely only to be completley picked apart and inevitably discarded. I would suggest that this is very true for the automotive industry. Year after year, concept cars are rolled out on display at Geneva, Detroit, and other major auto shows, only to be set aside and forgotten. Many of these are painstakingly build to production level, some even equipped with a fully functional drivetrain.</p>
         </div>
 
-        <div class="entree">
+        <div class="entry">
             <h4>Project 1: Natural Systems</h4>
             <br>
             <p>The assignment: ideate a natural system and design it in Processing. I chose to prototype a pond in which a frog grows up. It starts life as a tadpole eating lettuce and grows to a frog that eats flies. I've always been fascinated by amphibians, frogs in particular. They have an interesting life cycle and evolutionary history. My favorites are the poison dart frogs of Central and South America with their bright colors, small stature, and toxic protective system.</p>
