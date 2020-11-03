@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyboard and Mouse Activity - Particle IO Board Data with P5js</title>
+    <link href="main.css" rel="stylesheet">
+</head>
+
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.js"></script>
+    
+    <script>
+        var apiKeyboardURL =
+            "https://api.particle.io/v1/devices/e00fce68b1074156fdfeb88c/piezo_1_value?access_token=364604a5f4540b2c8073d7d2abe702f975c27450"
+        var apiMouseURL =
+            "https://api.particle.io/v1/devices/e00fce68b1074156fdfeb88c/piezo_2_value?access_token=364604a5f4540b2c8073d7d2abe702f975c27450"
+        var inKeyboardData, inMouseData;
+        var keyboardResult, mouseResult;
+        var currentR, previousR;
+        var keyboardPixels = [];
+        var mousePixels = []; 
+    </script>
+
+    <script type="text/javascript" src="scripts/sketch.js"></script>
+</body>
+
+</html>
