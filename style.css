@@ -71,7 +71,6 @@ h5 {
     color: #444;
     cursor: pointer;
     padding: 18px;
-    width: 100%;
     border-top: none;
     border-left: none;
     border-right: none;
@@ -102,7 +101,7 @@ h5 {
 }
 
 .panel {
-    padding: 0 18px;
+    padding: 0;
     background-color: white;
     max-height: 0;
     overflow: auto;
