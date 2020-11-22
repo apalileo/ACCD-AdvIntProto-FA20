@@ -71,6 +71,7 @@ h5 {
     color: #444;
     cursor: pointer;
     padding: 18px;
+    width: auto;
     border-top: none;
     border-left: none;
     border-right: none;
