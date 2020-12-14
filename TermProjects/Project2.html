@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../style.css">
+    <title>Advanced Interactive Prototyping FA20 - Anthony Palileo</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="header">
+            <div style="display: flex;">
+                <div class="logo">
+                    <a href="../index.html"><img src="images/AP Logo REV 06.png" style="width:60px"></a>
+                </div>
+                <div class="title">
+                    <h3>Anthony Palileo</h3>
+                    <h4>Advanced Interactive Prototyping</h4>
+                </div>
+            </div>
+            <div class="navibar">
+                <ul>
+                    <li><a href="Project1.html">Project 1</a></li>
+                    <li><a href="ReadingResponse.html">Reading Response</a></li>
+                    <li><a href="Project2.html">Project 2</a></li>
+                    <li><a href="Project3.html">Project 3</a></li>
+                    <li><a href="Project4.html">Project 4</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="content">
+            <h2>Project 2: Interactive Natural System</h2>
+            <br>
+            <p>The second project introduces a Particle Argon board taking inputs from potentiometers and a tactile
+                button and sending strings of data to be used in the Natural System. To keep things easier to manage, I
+                opted to forgo the whole tadpole eats lettuce and focused on the frog eating the flies.</p>
+            <p>One major addition to this is the rewriting of code to incorporate forces that repel the flies from the
+                frog. Initially I began by writing in PVectors in place of variables like posX and posY. A few
+                iterations in I found it best to just start from scratch and write the code around these parameters and
+                then bring the frog and fly images in.</p>
+            <p>The controller is built into a Sparkfun box with the tactile button placed just above the right
+                potentiometer knob. The left knob controls the X axis movement and the right knob controls Y axis
+                movement, much like an Etch-a-Sketch. However, these controls are mapped to full negative or full
+                positive velocity, so unlike an Etch-a-Sketch "cursor", the frog continues in the directions according
+                to the knob positions. The tactile button serves to eat the flies, but only if they are within the set
+                "striking range"</p>
+            <br>
+            <p>The controller:</p>
+            <img src="images/ParticleController1.jpg" class="center" style="width: 80%">
+            <br>
+            <img src="images/ParticleController2.jpg" class="center" style="width: 80%">
+            <br>
+            <img src="images/ParticleController3.jpg" class="center" style="width: 80%">
+            <br>
+            <p>For your viewing consideration, a quick demo video:
+                <iframe src="https://player.vimeo.com/video/470463256" class="center" width="640" height="480"
+                    frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></p>
+            <p>For future consideration, I would probably add a left tactile button, just for left handed or even
+                ambidextrous engagement.</p>
+        </div>
+
+        <div class="footer">
+            Copyright © 2020 Anthony Palileo. All Rights Reserved.
+        </div>
+    </div>
+</body>
+
+</html>
